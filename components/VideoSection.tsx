@@ -57,11 +57,11 @@ const VideoSection: React.FC = () => {
             </p>
         </div>
 
-        {/* Tablet/TV Frame */}
-        <div className="relative mx-auto bg-gradient-to-b from-[#4F46E5] to-[#4338ca] p-4 rounded-[2rem] shadow-2xl border-b-8 border-indigo-900 max-w-3xl transform transition-transform duration-500 hover:scale-[1.005]">
+        {/* Tablet/Mobile Frame - Adjusted for 9:16 Vertical Video */}
+        <div className="relative mx-auto bg-gradient-to-b from-[#4F46E5] to-[#4338ca] p-3 rounded-[2.5rem] shadow-2xl border-b-8 border-indigo-900 w-full max-w-[380px] transform transition-transform duration-500 hover:scale-[1.005]">
             
-            {/* Screen Container */}
-            <div className="bg-indigo-950 rounded-xl relative overflow-hidden shadow-inner w-full flex items-center justify-center ring-4 ring-transparent aspect-video">
+            {/* Screen Container - aspect-[9/16] for vertical video */}
+            <div className="bg-indigo-950 rounded-[2rem] relative overflow-hidden shadow-inner w-full flex items-center justify-center ring-4 ring-transparent aspect-[9/16]">
                 
                 {/* Referência onde o player será injetado */}
                 <div 
@@ -81,10 +81,12 @@ const VideoSection: React.FC = () => {
             </div>
 
             {/* Camera dot */}
-            <div className="absolute top-1/2 right-2 w-1.5 h-1.5 bg-white/30 rounded-full"></div>
+            <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-20 h-6 bg-black rounded-b-xl z-20 flex items-center justify-center pointer-events-none">
+                 <div className="w-12 h-1 bg-gray-800 rounded-full"></div>
+            </div>
             
-            {/* Pulsating Glow behind the tablet */}
-            <div className="absolute -inset-4 bg-brand-blue/20 rounded-[2.5rem] -z-10 blur-xl animate-pulse-gentle"></div>
+            {/* Pulsating Glow behind the phone */}
+            <div className="absolute -inset-4 bg-brand-blue/20 rounded-[3rem] -z-10 blur-xl animate-pulse-gentle"></div>
         </div>
 
       </div>
