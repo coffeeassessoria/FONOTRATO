@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Check } from 'lucide-react';
 
@@ -54,7 +55,8 @@ const Mechanism: React.FC = () => {
                         Ao traçar linhas, curvas e padrões fonéticos, ela fortalece as conexões cerebrais responsáveis pela leitura.
                     </p>
                 </div>
-                <div className="bg-brand-pastel-blue p-6 rounded-3xl transform rotate-2 border border-blue-100">
+                {/* Removed rotation on mobile (transform md:rotate-2) */}
+                <div className="bg-brand-pastel-blue p-6 rounded-3xl transform md:rotate-2 border border-blue-100">
                      <h4 className="font-bold text-brand-navy mb-4 text-center">E em poucos dias você vai notar a diferença:</h4>
                      <ul className="space-y-3">
                         {[
@@ -93,7 +95,7 @@ const Mechanism: React.FC = () => {
         </div>
 
         <div className="text-center">
-             <a href="#oferta" className="inline-block bg-brand-green text-white font-display font-black text-2xl px-12 py-4 rounded-full shadow-[0_6px_0_#15803d] hover:-translate-y-1 active:translate-y-1 active:shadow-none transition-all hover:bg-green-500">
+             <a href="#oferta" className="inline-block bg-brand-green text-white font-display font-black text-2xl px-12 py-4 rounded-full shadow-[0_6px_0_#15803d] hover:-translate-y-1 active:translate-y-1 active:shadow-none transition-all hover:bg-green-500 w-full md:w-auto text-center">
                 Quero meu filho(a) Lendo!
              </a>
         </div>

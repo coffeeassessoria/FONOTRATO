@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MODULES, BONUSES } from '../constants';
 import { Gift, CheckCircle } from 'lucide-react';
@@ -14,7 +15,8 @@ const Stack: React.FC = () => {
           <h2 className="text-3xl lg:text-5xl font-display font-black text-brand-navy mb-4 uppercase">
             Veja tudo que você vai receber
           </h2>
-          <div className="inline-block bg-brand-blue text-white px-6 py-2 rounded-full font-bold shadow-md transform -rotate-2">
+          {/* Removed rotation on mobile */}
+          <div className="inline-block bg-brand-blue text-white px-6 py-2 rounded-full font-bold shadow-md transform md:-rotate-2">
              + DE 100 ATIVIDADES DE GRAFISMO FONÉTICO
           </div>
         </div>
@@ -44,8 +46,8 @@ const Stack: React.FC = () => {
           ))}
         </div>
 
-        {/* Bonuses Section - Updated Background */}
-        <div className="bg-gradient-to-br from-brand-purple to-brand-pink rounded-[3rem] p-8 lg:p-16 text-white relative overflow-hidden shadow-xl transform rotate-1 transition-transform hover:rotate-0">
+        {/* Bonuses Section - Removed rotation on mobile */}
+        <div className="bg-gradient-to-br from-brand-purple to-brand-pink rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-16 text-white relative overflow-hidden shadow-xl transform md:rotate-1 transition-transform hover:rotate-0">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
             
             {/* Decorative circles */}

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { AlertTriangle, Frown, XCircle } from 'lucide-react';
 
@@ -26,7 +27,8 @@ const Problem: React.FC = () => {
                 ))}
             </div>
             
-            <div className="bg-white p-6 rounded-2xl shadow-xl transform rotate-2 border border-slate-200">
+            {/* Removed rotation on mobile (transform md:rotate-2) */}
+            <div className="bg-white p-6 rounded-2xl shadow-xl transform md:rotate-2 border border-slate-200">
                 <p className="font-display font-bold text-xl text-center text-slate-700 mb-2">
                     E o pior...
                 </p>
@@ -50,7 +52,8 @@ const Problem: React.FC = () => {
             <p className="text-slate-600">
                 É que ninguém te ensinou como ajudar seu filho a despertar a leitura de forma leve, divertida e no tempo certo.
             </p>
-            <div className="inline-block bg-brand-yellow px-6 py-2 rounded-full font-black text-brand-navy transform -rotate-1 shadow-md">
+            {/* Removed rotation on mobile (transform md:-rotate-1) */}
+            <div className="inline-block bg-brand-yellow px-6 py-2 rounded-full font-black text-brand-navy transform md:-rotate-1 shadow-md">
                 Por isso você precisa do Kit...
             </div>
         </div>

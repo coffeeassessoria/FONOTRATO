@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Mail, Printer, Heart } from 'lucide-react';
 
@@ -15,7 +16,8 @@ const HowItWorks: React.FC = () => {
             
             {/* Step 1 */}
             <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 bg-brand-blue rounded-2xl rotate-3 flex items-center justify-center mb-4 shadow-lg text-white">
+                {/* Removed rotation on mobile */}
+                <div className="w-20 h-20 bg-brand-blue rounded-2xl md:rotate-3 flex items-center justify-center mb-4 shadow-lg text-white">
                     <Mail className="w-10 h-10" />
                 </div>
                 <h3 className="font-display font-bold text-xl text-brand-navy mb-2">CHEGA NO E-MAIL</h3>
@@ -24,7 +26,8 @@ const HowItWorks: React.FC = () => {
 
             {/* Step 2 */}
             <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 bg-brand-yellow rounded-2xl -rotate-3 flex items-center justify-center mb-4 shadow-lg text-brand-navy">
+                {/* Removed rotation on mobile */}
+                <div className="w-20 h-20 bg-brand-yellow rounded-2xl md:-rotate-3 flex items-center justify-center mb-4 shadow-lg text-brand-navy">
                     <Printer className="w-10 h-10" />
                 </div>
                 <h3 className="font-display font-bold text-xl text-brand-navy mb-2">VOCÊ IMPRIME</h3>
@@ -33,7 +36,8 @@ const HowItWorks: React.FC = () => {
 
             {/* Step 3 */}
             <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 bg-brand-pink rounded-2xl rotate-2 flex items-center justify-center mb-4 shadow-lg text-white">
+                {/* Removed rotation on mobile */}
+                <div className="w-20 h-20 bg-brand-pink rounded-2xl md:rotate-2 flex items-center justify-center mb-4 shadow-lg text-white">
                     <Heart className="w-10 h-10" />
                 </div>
                 <h3 className="font-display font-bold text-xl text-brand-navy mb-2">OS PEQUENOS AMAM</h3>
